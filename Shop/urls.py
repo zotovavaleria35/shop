@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django.urls import path
-from shop import views  # Імпортуємо в'юхи саме з нового додатка shop
+from . import views  # Крапка означає "з цієї ж папки"
 
 urlpatterns = [
     path('admin/', admin.site.urls),
