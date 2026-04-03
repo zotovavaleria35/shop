@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head><title>{{ title }}</title></head>
+<body>
+    <h1>{{ title }}</h1>
+    <p>{{ content }}</p>
+    <nav>
+        {% if is_main %}
+            <a href="{% url 'about' %}">Перейти до розділу "Про нас"</a>
+        {% else %}
+            <a href="{% url 'home' %}">Повернутися на головну</a>
+        {% endif %}
+    </nav>
+</body>
+</html>
